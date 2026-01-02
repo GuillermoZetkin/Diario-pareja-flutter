@@ -1,0 +1,40 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "diario-de-una-pareja",
+          "appId": "1:606562889800:android:e9748f6b4476558d94687d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "diario-de-una-pareja",
+          "configurations": {
+            "android": "1:606562889800:android:e9748f6b4476558d94687d",
+            "web": "1:606562889800:web:8eedeeba11aa791094687d",
+            "windows": "1:606562889800:web:218233a883b289e394687d"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}

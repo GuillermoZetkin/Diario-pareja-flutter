@@ -1,0 +1,18 @@
+nombre_de_tu_app/
+├── android/               # Archivos nativos (se generan solos)
+├── assets/                # RECURSOS EXTERNOS
+│   ├── images/            # Fotos tuyas y de ella
+│   ├── icons/             # Iconos personalizados
+│   └── data/              # Archivo frases.json (donde pondrás tus mensajes)
+├── lib/                   # EL CORAZÓN DE LA APP (DART)
+│   ├── main.dart          # Punto de entrada de la app
+│   ├── models/            # Estructura de datos (ej: Clase Frase, Clase Cita)
+│   ├── screens/           # Pantallas completas
+│   │   ├── home_screen.dart
+│   │   ├── calendar_screen.dart
+│   │   └── mood_screen.dart
+│   ├── widgets/           # Componentes pequeños (ej: El contador, el botón de abrazo)
+│   ├── services/          # Lógica pesada (ej: GPS, conexión a Firebase)
+│   └── utils/             # Ayudas (ej: Colores, cálculos de distancia)
+├── pubspec.yaml           # Configuración de librerías y activos
+└── README.md              # Documentación de tu proyecto

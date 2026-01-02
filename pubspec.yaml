@@ -1,0 +1,48 @@
+name: diario_de_una_pareja
+description: Una app especial para acortar la distancia.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  intl: ^0.20.2
+  http: ^1.2.0
+  googleapis_auth: ^2.0.0
+  table_calendar: ^3.1.2
+  
+  # SECCIÓN FIREBASE (Versiones compatibles entre sí)
+  firebase_core: ^4.3.0
+  cloud_firestore: ^6.1.1
+  firebase_messaging: ^16.1.0
+  
+  vibration: ^3.1.5
+  shared_preferences: ^2.3.5
+  geolocator: ^14.0.2
+  flutter_local_notifications: ^19.5.0 # Para que aparezca la alerta visual
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 24 # Coincide con lo que configuramos para tu S25 Ultra
+  adaptive_icon_background: "#FFFFFF" # Color de fondo (puedes usar el de tu app)
+  adaptive_icon_foreground: "assets/images/icon.png" # Para iconos modernos de Android
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/    # Aquí pondrás sus fotos
+    - assets/data/frases.json  # Frases para la app
+    - assets/data/service-account.json   # Credenciales de Firebase      
