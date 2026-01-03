@@ -61,7 +61,7 @@ Para que la app funcione, debes crear o añadir manualmente los siguientes archi
 4. Ejecución
 
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/diario-pareja.git
+git clone https://github.com/GuillermoZetkin/diario-pareja.git
 
 # Instalar dependencias
 flutter pub get
